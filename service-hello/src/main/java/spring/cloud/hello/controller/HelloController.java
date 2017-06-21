@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping
-    String hello(){
+    @RequestMapping(value = "/hello")
+    String hello() {
         return "Hello World !";
     }
 
-    @RequestMapping(value="/auth")
-    String helloAuth(){
+    @RequestMapping(value = "/auth")
+    String helloAuth() {
         return "Hello Auth !";
     }
 
-    @RequestMapping(value="/noauth")
-    String helloNoAuth(){
+    @RequestMapping(value = "/noauth")
+    String helloNoAuth() {
         return "Hello No Auth !";
     }
 
