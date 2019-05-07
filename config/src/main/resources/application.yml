@@ -1,0 +1,14 @@
+app:
+  version: @project.version@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: "git@github.com:zhxiaowu/spring-cloud-demo.git"
+          search-paths: config/src/main/resources/shared
+  security:
+    user:
+      password: ${CONFIG_SERVICE_PASSWORD}
+server:
+  port: 8888
