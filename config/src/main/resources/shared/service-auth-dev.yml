@@ -12,11 +12,6 @@ spring:
     database: MYSQL
     generate-ddl: false
     show-sql: true
+    open-in-view: false
     hibernate:
       ddl-auto: none
-
-
-security:
-  user:
-    name: admin
-    password: secret

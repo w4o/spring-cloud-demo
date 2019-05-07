@@ -1,6 +1,10 @@
 server:
   context-path: /hello
   port: 7000
+spring:
+  security:
+    user:
+      password: xxxxxxxxxxxxxxxxxxxxxxx
 
 security:
   user:
